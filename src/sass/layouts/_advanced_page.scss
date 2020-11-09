@@ -1,0 +1,16 @@
+// Advanced page
+.hero__title {
+	font-size: 1.5em;
+}
+
+@include media-breakpoint-up(md) {
+	.hero__title {
+		font-size: 3em;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.hero__title {
+		font-size: 3.5em;
+	}
+}

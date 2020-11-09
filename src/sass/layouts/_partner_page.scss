@@ -1,0 +1,26 @@
+// Partner Page
+.post__header {
+	.icon {
+		font-size: 1.5em;
+	}
+}
+
+.post__title {
+	font-size: 1.25em;
+}
+
+@include media-breakpoint-up(md) {
+	.post__title {
+		font-size: 2em;
+	}
+
+	.post__body {
+		font-size: 1.25em;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.post__title {
+		font-size: 2.25em;
+	}
+}

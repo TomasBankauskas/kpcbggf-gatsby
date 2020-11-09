@@ -1,0 +1,22 @@
+// Inverse
+.inverse {
+	background-color: $inverse-bg-color;
+	color: $inverse-text-color;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: $inverse-heading-color;
+	}
+
+	a {
+		color: $inverse-link-color;
+
+		&:hover {
+			color: $inverse-link-hover-color;
+		}
+	}
+}

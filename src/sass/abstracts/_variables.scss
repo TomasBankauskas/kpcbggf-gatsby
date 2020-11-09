@@ -1,0 +1,70 @@
+// Variables
+$font-primary: "proxima-nova", sans-serif;
+
+// Colors
+$bg-color:                     #fff !default;
+$text-color:                   #000 !default;
+$heading-color:                #000 !default;
+
+$border-color:                 #eee !default;
+$border-alt-color:             #ddd !default;
+
+$link-color:                   #909392 !default;
+$link-hover-color:             #6a6d6c !default;
+
+$btn-text-color:               #fff !default;
+$btn-bg-color:                 #909392 !default;
+$btn-hover-bg-color:           #6a6d6c !default;
+$btn-hover-text-color:         #fff !default;
+$btn-icon-border-radius:       4px !default;
+
+$tooltip-text-color:           #fff !default;
+$tooltip-bg-color:             #222 !default;
+
+// Inverse
+$inverse-bg-color:             #000 !default;
+$inverse-bg-alt-color:         #111 !default;
+$inverse-text-color:           #fff !default;
+$inverse-heading-color:        #fff !default;
+$inverse-link-color:           rgba(255,255,255,0.7) !default;
+$inverse-link-hover-color:     #fff !default;
+$inverse-border-color:         #222 !default;
+
+$btn-text-color:               #fff !default;
+$btn-bg-color:                 #909392 !default;
+$btn-hover-bg-color:           #6a6d6c !default;
+$btn-hover-text-color:         #fff !default;
+$btn-icon-border-radius:       4px !default;
+
+// Grid
+$grid-cells: 12 !default;
+$grid-gap:   1.25rem !default;
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: ($spacer * 0.3125),
+  2: ($spacer * 0.625),
+  3: ($spacer * 1.25),
+  4: ($spacer * 1.875),
+  5: ($spacer * 2.5),
+  6: ($spacer * 3.75)
+) !default;
+
+
+// Media breakpoints
+$media-breakpoints: (
+	sm: 320px,
+	md: 670px,
+	lg: 1024px
+) !default;
+
+// Container max widths
+$container-max-width:     100% !default;
+$container-padding:       1.875rem !default;
+$container-padding-small: 0.9375rem !default;
+
+$container-sizes: (
+	medium: 640px,
+	large:  970px
+) !default;

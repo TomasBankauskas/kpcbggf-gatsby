@@ -1,0 +1,28 @@
+// Site Layout
+.site {
+	box-sizing: border-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-height: 100vh;
+	padding-top: 3.125rem;
+	position: relative;
+}
+
+.main-content {
+	box-sizing: border-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	width: 100%;
+}
+
+@include media-breakpoint-up(md) {
+	.site {
+		padding-top: 5rem;
+	}
+}

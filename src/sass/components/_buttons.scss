@@ -1,0 +1,42 @@
+// Button Styles
+button,
+.btn {
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: $btn-bg-color;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	box-sizing: border-box;
+	color: $btn-text-color;
+	cursor: pointer;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	font-size: 1em;
+	font-weight: bold;
+	-ms-flex-pack: center;
+	justify-content: center;
+	line-height: 1.25;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	transition: .25s ease;
+	vertical-align: middle;
+	white-space: nowrap;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $btn-hover-bg-color;
+		color: $btn-hover-text-color;
+		outline: 0;
+	}
+}
+
+.btn--icon {
+	border-radius: $btn-icon-border-radius;
+	height: 1.75em;
+	min-width: 0;
+	padding: 0;
+	position: relative;
+	width: 1.75em;
+}

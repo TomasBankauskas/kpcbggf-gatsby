@@ -1,0 +1,111 @@
+// Sections
+.section--partners,
+.section--content {
+	.section__title {
+		font-size: 1.25em;
+	}
+}
+
+.section--companies {
+	.section__title {
+		font-size: 1em;
+	}
+}
+
+.section--partners {
+	&:not(:last-child) {
+		border-bottom: 1px solid $border-alt-color;
+	}
+}
+
+.partner__name {
+	font-size: 1em;
+}
+
+.partner__thumb {
+	-webkit-transition: .15s ease-in-out;
+	transition: .15s ease-in-out;
+
+	&:hover {
+		text-decoration: none;
+		-webkit-transform: scale(1.075);
+		transform: scale(1.075);
+	}
+}
+
+.company__thumb {
+	background-color: $bg-color;
+	border: 1px solid $border-color;
+	border-bottom-width: 3px;
+	overflow: visible;
+	position: relative;
+
+	&:before {
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 8px solid $tooltip-bg-color;
+		bottom: 100%;
+		content: "";
+		height: 0;
+		left: 50%;
+		margin-bottom: 6px;
+		opacity: 0;
+		pointer-events: none;
+		position: absolute;
+		-webkit-transform: translate(-50%, 4px);
+		transform: translate(-50%, 4px);
+		-webkit-transition: all .2s ease-out .2s;
+		transition: all .2s ease-out .2s;
+		width: 0;
+		z-index: 10;
+	}
+
+	&:after {
+		background: $tooltip-bg-color;
+		border-radius: 3px;
+		bottom: 100%;
+		color: $tooltip-text-color;
+		content: "View Website";
+		font-size: 0.8125em;
+		line-height: 1.5;
+		left: 50%;
+		margin-bottom: 14px;
+		opacity: 0;
+		padding: .5em 0.75em;
+		pointer-events: none;
+		position: absolute;
+		-webkit-transform: translate(-50%, 4px);
+		transform: translate(-50%, 4px);
+		-webkit-transition: all .2s ease-out .2s;
+		transition: all .2s ease-out .2s;
+		white-space: nowrap;
+		z-index: 1;
+	}
+
+	&:hover{
+		&:before,
+		&:after {
+			
+			opacity: 1;
+			pointer-events: none;
+			-webkit-transform: translate(-50%, 0);
+			transform: translate(-50%, 0);
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.section--partners,
+	.section--content {
+		.section__title {
+			font-size: 1.5em;
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.section--companies .section__title,
+	.partner__name {
+		font-size: 1.125em;
+	}
+}
